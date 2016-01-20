@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/// Hides an element visually while still allowing the content to be accessible
+/// to assistive technology.
+///
+/// @link http://goo.gl/Vf1TGn
+///
+/// @example scss
+/// .element {
+///   @include hide-visually;
+/// }
+///
+/// @example css
+/// .element {
+///   border: 0;
+///   clip: rect(1px, 1px, 1px, 1px);
+///   height: 1px;
+///   overflow: hidden;
+///   padding: 0;
+///   position: absolute;
+///   width: 1px;
+/// }
+
+@mixin hide-visually {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
